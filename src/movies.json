@@ -1,0 +1,21 @@
+{
+    "watched": {
+        "movies": [
+            {
+                "name": "One Hundred and One Dalmatians",
+                "year": "1961",
+                "rating": 0
+            },
+            {
+                "name": "Alice Through the Looking Glass",
+                "year": "2016",
+                "rating": 0
+            }
+        ],
+        "tv": []
+    },
+    "watchlist": {
+        "movies": [],
+        "tv": []
+    }
+}
