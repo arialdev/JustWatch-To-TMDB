@@ -44,10 +44,10 @@ JustWatch-To-TMDB is a software built with NodeJS which helps you to migrate you
     ##### Watched TV shows
     ```javascript
     const results = [...document.querySelectorAll('.title-card')].map(tv => {
-    return { 
-        name: tv.querySelector('.title-card-heading').firstChild.textContent.trim(),
-        seen: true }
-    });
+        return { 
+           name: tv.querySelector('.title-card-heading').firstChild.textContent.trim(),
+           seen: true }
+       });
     console.log(results);
     ```
    8. After the execution of any of these snippets we will do right-click onto the results value and copy it as an object (if your browser does not support this action I strongly recommend you to use another one such as Opera or Chrome). 
@@ -68,14 +68,12 @@ JustWatch-To-TMDB is a software built with NodeJS which helps you to migrate you
 
    ![](https://raw.githubusercontent.com/arialdev/JustWatch-To-TMDB/main/readme_resources/check_nodejs.png)
 
-5. #### Set your private tokens file.
-
-6. We are going to use the TMDB API in order to import our data from JustWatch. Because of this, you must request access to the API (at the moment I'm writing this this process is really fast and simple). For doing so you must:
+5. We are going to use the TMDB API in order to import our data from JustWatch. Because of this, you must request access to the API (at the moment I'm writing this this process is really fast and simple). For doing so you must:
 
    1. Create and validate an account on [TMDB](https://www.themoviedb.org).
    2. Follow the [documentation instructions](https://developers.themoviedb.org/3/getting-started/introduction) to request access to the API and to request all the necessary tokens and private keys.
 
-7. Go back to the project's directory and create a new file in the root named `.env`. On it you must paste the following data, including your private keys and tokens (read the documentation in order to obtain these). Substitute the `${blablabla} `fields with your personal data.
+6. Go back to the project's directory and create a new file in the root named `.env`. On it you must paste the following data, including your private keys and tokens (read the documentation in order to obtain these). Substitute the `${blablabla} `fields with your personal data.
    
    *Note: this is the trickiest part. Be patient. You can help yourself by using [PostMan](https://www.postman.com) or any HTTP Request client for getting the needed tokens*
    
@@ -90,7 +88,7 @@ JustWatch-To-TMDB is a software built with NodeJS which helps you to migrate you
    ACCOUNT_ID=${YOUR ACCOUNT ID (read the docs in order to know how to obtain it)}
    ```
    
-8. Open the project's directory on a terminal and execute 
+7. Open the project's directory on a terminal and execute 
    ```shell
    npm start
    ```
